@@ -1,0 +1,65 @@
+apparatus:
+  facility: Burke Lab
+  institution: Columbia University
+  kind: JSR
+  reactor-volume:
+    units: m^3
+    value: 8.5e-05
+  residence-time:
+    relative-uncertainty: 0.02
+    units: s
+    value: 0.45
+common-properties:
+  assumptions:
+    equation-of-state: ideal gas
+    mechanical-boundary: constant pressure
+    thermal-boundary: isothermal
+  composition:
+  - mole-fraction: 0.2
+    relative-uncertainty: 0.04
+    species: N2O
+  - mole-fraction: 0.000355823
+    relative-uncertainty: 0.04
+    species: NO2
+  - mole-fraction: 0.799644177
+    relative-uncertainty: 0.04
+    species: He
+  pressure:
+    relative-uncertainty: 0.01
+    units: atm
+    value: 1.020776876
+  temperature:
+    relative-uncertainty: 0.01
+    units: K
+    value-list:
+    - 1050
+datapoints:
+  mole-fraction:
+  - csvfile: /home/mcb/MSI/data/ID1-17/id12_NOchem.csv
+    targets:
+    - absolute-uncertainty: 2.0e-05
+      name: 'NO'
+      relative-uncertainty: 0.05
+      species: 'NO'
+  concentration:
+    - csvfile: 
+      targets:
+      - absolute-uncertainty: 
+        name: 
+        relative-uncertainty: 
+        species: 
+experiment-type: Species profile
+file-author:
+  ORCID: 123456
+  name: Mark Barbet
+file-version: (1, 0)
+reference:
+  authors:
+  - ORCID: null
+    name: Mark Barbet
+  detail: N2O decomposition
+  doi: 10.1021/jp211434f
+  journal: Journal of Physical Chemistry
+  pages: 6142-6158
+  volume: 116
+  year: 2020
